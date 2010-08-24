@@ -61,17 +61,17 @@
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-        <dsig:DigestValue>6ZRMqRGnTue9RORkzeB4csoYDsU=</dsig:DigestValue>
+        <dsig:DigestValue>CZ62gBIrzg7986h3ke6mHJimLk8=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
-  <file name="test1.exe.config" size="233">
+  <file name="test1.exe.config" size="239">
     <hash>
       <dsig:Transforms>
         <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
       </dsig:Transforms>
       <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-      <dsig:DigestValue>YOGAy3kjtGoLh2d3V7FyTvtpQiA=</dsig:DigestValue>
+      <dsig:DigestValue>d0uX0mqx7L+umr6SrsNZLzVyDJU=</dsig:DigestValue>
     </hash>
   </file>
 </asmv1:assembly>
