@@ -33,6 +33,7 @@
             this.PingButton = new System.Windows.Forms.Button();
             this.ShowBackLabel = new System.Windows.Forms.Label();
             this.ShowBackLab = new System.Windows.Forms.Label();
+            this.DownloadBar = new System.Windows.Forms.ProgressBar();
             this.SuspendLayout();
             // 
             // PingUrlText
@@ -77,11 +78,19 @@
             this.ShowBackLab.Size = new System.Drawing.Size(0, 12);
             this.ShowBackLab.TabIndex = 4;
             // 
+            // DownloadBar
+            // 
+            this.DownloadBar.Location = new System.Drawing.Point(17, 78);
+            this.DownloadBar.Name = "DownloadBar";
+            this.DownloadBar.Size = new System.Drawing.Size(255, 13);
+            this.DownloadBar.TabIndex = 5;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(284, 262);
+            this.Controls.Add(this.DownloadBar);
             this.Controls.Add(this.ShowBackLab);
             this.Controls.Add(this.ShowBackLabel);
             this.Controls.Add(this.PingButton);
@@ -102,6 +111,7 @@
         private System.Windows.Forms.Button PingButton;
         private System.Windows.Forms.Label ShowBackLabel;
         private System.Windows.Forms.Label ShowBackLab;
+        private System.Windows.Forms.ProgressBar DownloadBar;
     }
 }
 
