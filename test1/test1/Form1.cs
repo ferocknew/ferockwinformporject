@@ -11,6 +11,7 @@ using System.Net;
 using System.Net.NetworkInformation;
 using System.Threading;
 using SystemFunction;
+using System.Data.SqlServerCe;
 
 namespace test1
 {
@@ -20,25 +21,41 @@ namespace test1
         {
             InitializeComponent();
         }
-
         private void Form1_Load(object sender, EventArgs e)
         {
             this.Show();
             this.PingUrlText.Focus();
 
+            //SQLite
             SQLiteConnection conn = new SQLiteConnection();
             String datasource = @"Data Source=new_sqlite.db3";
             conn.ConnectionString = datasource;
             conn.Open();
-
 
             String _sql = "select name from [admin] where (id=1)";
             SQLiteCommand cmd = new SQLiteCommand(_sql, conn);
             SQLiteDataReader dr = cmd.ExecuteReader();
 
             if (dr.Read()) {
-                MessageBox.Show(dr.GetValue(0).ToString());
+                //MessageBox.Show(dr.GetValue(0).ToString());
             }
+
+            //SQLcompact
+            SqlCeConnection connSQLcompact = new SqlCeConnection();
+            connSQLcompact.ConnectionString = @"Data Source=sql_compact.db.sdf;Persist Security Info=False;Password=ferock;";
+            connSQLcompact.Open();
+            _sql = "select * from [NewTest]";
+            DataSet ds = new DataSet();
+            SqlCeDataAdapter da = new SqlCeDataAdapter(_sql, connSQLcompact);
+            da.Fill(ds);
+            //MessageBox.Show(ds.Tables[0].Rows.Count.ToString());
+
+            DataRow myRow;
+            myRow = ds.Tables[0].Rows[0];
+            MessageBox.Show(myRow["UserName"].ToString());
+
+
+
         }
         private void PingButton_Click(object sender, EventArgs e)
         {
