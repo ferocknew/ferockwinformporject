@@ -28,12 +28,17 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.PingUrlText = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.PingButton = new System.Windows.Forms.Button();
             this.ShowBackLabel = new System.Windows.Forms.Label();
             this.ShowBackLab = new System.Windows.Forms.Label();
             this.DownloadBar = new System.Windows.Forms.ProgressBar();
+            this.notifyIcon = new System.Windows.Forms.NotifyIcon(this.components);
+            this._sql_compact_dbDataSet = new test1._sql_compact_dbDataSet();
+            ((System.ComponentModel.ISupportInitialize)(this._sql_compact_dbDataSet)).BeginInit();
             this.SuspendLayout();
             // 
             // PingUrlText
@@ -85,6 +90,18 @@
             this.DownloadBar.Size = new System.Drawing.Size(255, 13);
             this.DownloadBar.TabIndex = 5;
             // 
+            // notifyIcon
+            // 
+            this.notifyIcon.Icon = ((System.Drawing.Icon)(resources.GetObject("notifyIcon.Icon")));
+            this.notifyIcon.Text = "notifyIcon";
+            this.notifyIcon.Visible = true;
+            this.notifyIcon.MouseDoubleClick += new System.Windows.Forms.MouseEventHandler(this.notifyIcon_MouseDoubleClick);
+            // 
+            // _sql_compact_dbDataSet
+            // 
+            this._sql_compact_dbDataSet.DataSetName = "_sql_compact_dbDataSet";
+            this._sql_compact_dbDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
@@ -99,6 +116,7 @@
             this.Name = "Form1";
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.Form1_Load);
+            ((System.ComponentModel.ISupportInitialize)(this._sql_compact_dbDataSet)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -112,6 +130,8 @@
         private System.Windows.Forms.Label ShowBackLabel;
         private System.Windows.Forms.Label ShowBackLab;
         private System.Windows.Forms.ProgressBar DownloadBar;
+        private System.Windows.Forms.NotifyIcon notifyIcon;
+        private _sql_compact_dbDataSet _sql_compact_dbDataSet;
     }
 }
 

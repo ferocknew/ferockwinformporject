@@ -1,4 +1,6 @@
-D:\Poject\test\ferockwinformporject\test1\test1\bin\Debug\System.Data.SQLite.dll
+D:\Poject\test\ferockwinformporject\test1\test1\bin\Debug\System.Data.SqlServerCe.dll
+D:\Poject\test\ferockwinformporject\test1\test1\bin\Debug\appData\sql_compact.db.sdf
+D:\Poject\test\ferockwinformporject\test1\test1\bin\Debug\command\System.Data.SQLite.dll
 D:\Poject\test\ferockwinformporject\test1\test1\bin\Debug\sqlceca35.dll
 D:\Poject\test\ferockwinformporject\test1\test1\bin\Debug\sqlcecompact35.dll
 D:\Poject\test\ferockwinformporject\test1\test1\bin\Debug\sqlceer35CN.dll
@@ -7,8 +9,6 @@ D:\Poject\test\ferockwinformporject\test1\test1\bin\Debug\sqlceme35.dll
 D:\Poject\test\ferockwinformporject\test1\test1\bin\Debug\sqlceoledb35.dll
 D:\Poject\test\ferockwinformporject\test1\test1\bin\Debug\sqlceqp35.dll
 D:\Poject\test\ferockwinformporject\test1\test1\bin\Debug\sqlcese35.dll
-D:\Poject\test\ferockwinformporject\test1\test1\bin\Debug\sql_compact.db.sdf
-D:\Poject\test\ferockwinformporject\test1\test1\bin\Debug\System.Data.SqlServerCe.dll
 D:\Poject\test\ferockwinformporject\test1\test1\bin\Debug\test1.exe.config
 D:\Poject\test\ferockwinformporject\test1\test1\bin\Debug\test1.exe.manifest
 D:\Poject\test\ferockwinformporject\test1\test1\bin\Debug\test1.application
