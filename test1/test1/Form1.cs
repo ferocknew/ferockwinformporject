@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
-using System.Data.SQLite;
+//using System.Data.SQLite;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -12,6 +12,8 @@ using System.Net.NetworkInformation;
 using System.Threading;
 using SystemFunction;
 using System.Data.SqlServerCe;
+using System.IO.MemoryMappedFiles;
+using System.Net.Sockets;
 
 namespace test1
 {
@@ -21,28 +23,32 @@ namespace test1
         {
             InitializeComponent();
         }
+
+
         private void Form1_Load(object sender, EventArgs e)
         {
             this.Show();
             this.PingUrlText.Focus();
+            String _sql;
 
+            /*
             //SQLite
             SQLiteConnection conn = new SQLiteConnection();
-            String datasource = @"Data Source=new_sqlite.db3";
+            String datasource = @"Data Source=appData\new_sqlite.db3";
             conn.ConnectionString = datasource;
             conn.Open();
 
-            String _sql = "select name from [admin] where (id=1)";
+            _sql = "select name from [admin] where (id=1)";
             SQLiteCommand cmd = new SQLiteCommand(_sql, conn);
             SQLiteDataReader dr = cmd.ExecuteReader();
 
             if (dr.Read()) {
                 //MessageBox.Show(dr.GetValue(0).ToString());
-            }
+            }*/
 
             //SQLcompact
             SqlCeConnection connSQLcompact = new SqlCeConnection();
-            connSQLcompact.ConnectionString = @"Data Source=sql_compact.db.sdf;Persist Security Info=False;Password=ferock;";
+            connSQLcompact.ConnectionString = @"Data Source=appData\sql_compact.db.sdf;Persist Security Info=False;Password=ferock;";
             connSQLcompact.Open();
             _sql = "select * from [NewTest]";
             DataSet ds = new DataSet();
@@ -54,8 +60,9 @@ namespace test1
             myRow = ds.Tables[0].Rows[0];
             MessageBox.Show(myRow["UserName"].ToString());
 
+            //MessageBox.Show(ReadLocalVerifyResult());
 
-
+            MessageBox.Show(_sql_compact_dbDataSet.DataSetName.ToString());
         }
         private void PingButton_Click(object sender, EventArgs e)
         {
@@ -90,5 +97,71 @@ namespace test1
             }
         }
 
+        //读取够娱乐信息类
+        static string ReadLocalVerifyResult()
+        {
+            try
+            {
+                using (MemoryMappedFile memfile = MemoryMappedFile.OpenExisting(@"Global\GogoVerifyClient_VerifyResult",
+                    MemoryMappedFileRights.Read))
+                {
+                    if (memfile != null)
+                    {
+                        using (var accessor = memfile.CreateViewAccessor(0, 128, MemoryMappedFileAccess.Read))
+                        {
+                            if (accessor != null)
+                            {
+                                byte[] readbuf = new byte[128];
+                                if (0 != accessor.ReadArray<byte>(0, readbuf, 0, 128))
+                                {
+                                    var encode = Encoding.GetEncoding("gb2312");
+                                    return encode.GetString(readbuf).TrimEnd(new char[] { '\0', '\n', '\r' });
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            catch (Exception e) { 
+            
+            }
+
+            using (TcpClient tcpclient = new TcpClient())
+            {
+                tcpclient.Connect("127.0.0.1", 13344);
+                using (var stream = tcpclient.GetStream())
+                {
+                    if (stream != null && stream.CanRead)
+                    {
+                        byte[] readbuf = new byte[128];
+                        if (0 != stream.Read(readbuf, 0, 128))
+                        {
+                            var encode = Encoding.GetEncoding("gb2312");
+                            return encode.GetString(readbuf).TrimEnd(new char[] { '\0', '\n', '\r' });
+                        }
+                    }
+                }
+            }
+            return string.Empty;
+        }
+
+    private void Form1_Deactivate(object sender, EventArgs e)  
+    {  
+     
+       if (this.WindowState == FormWindowState.Minimized)  
+      {  
+            this.ShowInTaskbar = false;  
+            this.Hide();  
+        }  
+    } 
+        private void notifyIcon_MouseDoubleClick(object sender, MouseEventArgs e)
+        {
+            if (this.WindowState == FormWindowState.Minimized)
+            {
+                this.ShowInTaskbar = false;  //显示在系统任务栏
+                this.WindowState = FormWindowState.Normal;  //还原窗体
+                notifyIcon.Visible = true;  //托盘图标隐藏
+            }
+        }
     }
 }

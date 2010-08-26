@@ -26,7 +26,8 @@ namespace test1.Properties {
         [global::System.Configuration.ApplicationScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.ConnectionString)]
-        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=|DataDirectory|\\sql_compact.db.sdf;Persist Security Info=True")]
+        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=|DataDirectory|\\appData\\sql_compact.db.sdf;Persist Security Info=True" +
+            "")]
         public string sql_compact_dbConnectionString {
             get {
                 return ((string)(this["sql_compact_dbConnectionString"]));
