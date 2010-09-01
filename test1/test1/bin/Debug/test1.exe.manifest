@@ -55,14 +55,14 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="test1.exe" size="20480">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="test1.exe" size="23040">
       <assemblyIdentity name="test1" version="1.0.0.0" language="neutral" processorArchitecture="x86" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-        <dsig:DigestValue>6DvHFqjVoQHEHk2aib9kRXxMnbo=</dsig:DigestValue>
+        <dsig:DigestValue>IeGkdki1Gvw8PC+QK+m3YD94Jwk=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -183,13 +183,13 @@
       <dsig:DigestValue>cpPKAcX5H9Y39O6BSqXLiw7FhKM=</dsig:DigestValue>
     </hash>
   </file>
-  <file name="test1.exe.config" size="546">
+  <file name="test1.exe.config" size="548">
     <hash>
       <dsig:Transforms>
         <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
       </dsig:Transforms>
       <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-      <dsig:DigestValue>3PEDXSHekRj2yu7FdtPOrUku1bM=</dsig:DigestValue>
+      <dsig:DigestValue>CUSd0y4ZFs5Jyk7IA/PGkcQIe7g=</dsig:DigestValue>
     </hash>
   </file>
 </asmv1:assembly>
