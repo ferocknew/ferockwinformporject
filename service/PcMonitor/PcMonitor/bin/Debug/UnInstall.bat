@@ -1,1 +1,0 @@
-call InstallUtil.exe /u PcMonitor.exe
