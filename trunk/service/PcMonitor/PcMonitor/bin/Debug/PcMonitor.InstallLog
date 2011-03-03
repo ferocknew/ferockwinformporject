@@ -1,0 +1,13 @@
+﻿正在安装程序集“D:\Poject\test\ferockwinformporject\service\PcMonitor\PcMonitor\bin\Debug\PcMonitor.exe”。
+受影响的参数是:
+   logtoconsole = 
+   logfile = D:\Poject\test\ferockwinformporject\service\PcMonitor\PcMonitor\bin\Debug\PcMonitor.InstallLog
+   assemblypath = D:\Poject\test\ferockwinformporject\service\PcMonitor\PcMonitor\bin\Debug\PcMonitor.exe
+正在安装服务 PcMonitor...
+已成功安装服务 PcMonitor。
+正在日志 Application 中创建 EventLog 源 PcMonitor...
+正在提交程序集“D:\Poject\test\ferockwinformporject\service\PcMonitor\PcMonitor\bin\Debug\PcMonitor.exe”。
+受影响的参数是:
+   logtoconsole = 
+   logfile = D:\Poject\test\ferockwinformporject\service\PcMonitor\PcMonitor\bin\Debug\PcMonitor.InstallLog
+   assemblypath = D:\Poject\test\ferockwinformporject\service\PcMonitor\PcMonitor\bin\Debug\PcMonitor.exe
