@@ -1,9 +1,9 @@
+D:\Poject\test\ferockwinformporject\service\PcMonitor\PcMonitor\bin\Debug\Data\Data.mdb
+D:\Poject\test\ferockwinformporject\service\PcMonitor\PcMonitor\bin\Debug\PcMonitor.exe
+D:\Poject\test\ferockwinformporject\service\PcMonitor\PcMonitor\bin\Debug\PcMonitor.pdb
 D:\Poject\test\ferockwinformporject\service\PcMonitor\PcMonitor\obj\x86\Debug\ResolveAssemblyReference.cache
 D:\Poject\test\ferockwinformporject\service\PcMonitor\PcMonitor\obj\x86\Debug\PcMonitor.ProjectInstaller.resources
 D:\Poject\test\ferockwinformporject\service\PcMonitor\PcMonitor\obj\x86\Debug\GenerateResource.read.1.tlog
 D:\Poject\test\ferockwinformporject\service\PcMonitor\PcMonitor\obj\x86\Debug\GenerateResource.write.1.tlog
-D:\Poject\test\ferockwinformporject\service\PcMonitor\PcMonitor\bin\Debug\Data\Data.mdb
-D:\Poject\test\ferockwinformporject\service\PcMonitor\PcMonitor\bin\Debug\PcMonitor.exe
-D:\Poject\test\ferockwinformporject\service\PcMonitor\PcMonitor\bin\Debug\PcMonitor.pdb
 D:\Poject\test\ferockwinformporject\service\PcMonitor\PcMonitor\obj\x86\Debug\PcMonitor.exe
 D:\Poject\test\ferockwinformporject\service\PcMonitor\PcMonitor\obj\x86\Debug\PcMonitor.pdb
