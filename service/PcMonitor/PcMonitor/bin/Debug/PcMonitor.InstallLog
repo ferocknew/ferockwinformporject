@@ -11,3 +11,108 @@
    logtoconsole = 
    logfile = D:\Poject\test\ferockwinformporject\service\PcMonitor\PcMonitor\bin\Debug\PcMonitor.InstallLog
    assemblypath = D:\Poject\test\ferockwinformporject\service\PcMonitor\PcMonitor\bin\Debug\PcMonitor.exe
+正在卸载程序集“D:\Poject\test\ferockwinformporject\service\PcMonitor\PcMonitor\bin\Debug\PcMonitor.exe”。
+受影响的参数是:
+   logtoconsole = 
+   logfile = D:\Poject\test\ferockwinformporject\service\PcMonitor\PcMonitor\bin\Debug\PcMonitor.InstallLog
+   assemblypath = D:\Poject\test\ferockwinformporject\service\PcMonitor\PcMonitor\bin\Debug\PcMonitor.exe
+正在移除 EventLog 源 PcMonitor。
+正在从系统中移除服务 PcMonitor...
+已成功地从系统中移除服务 PcMonitor。
+尝试停止服务 PcMonitor。
+正在安装程序集“D:\Poject\test\ferockwinformporject\service\PcMonitor\PcMonitor\bin\Debug\PcMonitor.exe”。
+受影响的参数是:
+   logtoconsole = 
+   logfile = D:\Poject\test\ferockwinformporject\service\PcMonitor\PcMonitor\bin\Debug\PcMonitor.InstallLog
+   assemblypath = D:\Poject\test\ferockwinformporject\service\PcMonitor\PcMonitor\bin\Debug\PcMonitor.exe
+正在安装服务 PcMonitor...
+已成功安装服务 PcMonitor。
+正在日志 Application 中创建 EventLog 源 PcMonitor...
+正在提交程序集“D:\Poject\test\ferockwinformporject\service\PcMonitor\PcMonitor\bin\Debug\PcMonitor.exe”。
+受影响的参数是:
+   logtoconsole = 
+   logfile = D:\Poject\test\ferockwinformporject\service\PcMonitor\PcMonitor\bin\Debug\PcMonitor.InstallLog
+   assemblypath = D:\Poject\test\ferockwinformporject\service\PcMonitor\PcMonitor\bin\Debug\PcMonitor.exe
+正在卸载程序集“D:\Poject\test\ferockwinformporject\service\PcMonitor\PcMonitor\bin\Debug\PcMonitor.exe”。
+受影响的参数是:
+   logtoconsole = 
+   logfile = D:\Poject\test\ferockwinformporject\service\PcMonitor\PcMonitor\bin\Debug\PcMonitor.InstallLog
+   assemblypath = D:\Poject\test\ferockwinformporject\service\PcMonitor\PcMonitor\bin\Debug\PcMonitor.exe
+正在移除 EventLog 源 PcMonitor。
+正在从系统中移除服务 PcMonitor...
+已成功地从系统中移除服务 PcMonitor。
+尝试停止服务 PcMonitor。
+正在安装程序集“D:\Poject\test\ferockwinformporject\service\PcMonitor\PcMonitor\bin\Debug\PcMonitor.exe”。
+受影响的参数是:
+   logtoconsole = 
+   logfile = D:\Poject\test\ferockwinformporject\service\PcMonitor\PcMonitor\bin\Debug\PcMonitor.InstallLog
+   assemblypath = D:\Poject\test\ferockwinformporject\service\PcMonitor\PcMonitor\bin\Debug\PcMonitor.exe
+正在安装服务 PcMonitor...
+已成功安装服务 PcMonitor。
+正在日志 Application 中创建 EventLog 源 PcMonitor...
+正在提交程序集“D:\Poject\test\ferockwinformporject\service\PcMonitor\PcMonitor\bin\Debug\PcMonitor.exe”。
+受影响的参数是:
+   logtoconsole = 
+   logfile = D:\Poject\test\ferockwinformporject\service\PcMonitor\PcMonitor\bin\Debug\PcMonitor.InstallLog
+   assemblypath = D:\Poject\test\ferockwinformporject\service\PcMonitor\PcMonitor\bin\Debug\PcMonitor.exe
+正在卸载程序集“D:\Poject\test\ferockwinformporject\service\PcMonitor\PcMonitor\bin\Debug\PcMonitor.exe”。
+受影响的参数是:
+   logtoconsole = 
+   logfile = D:\Poject\test\ferockwinformporject\service\PcMonitor\PcMonitor\bin\Debug\PcMonitor.InstallLog
+   assemblypath = D:\Poject\test\ferockwinformporject\service\PcMonitor\PcMonitor\bin\Debug\PcMonitor.exe
+正在移除 EventLog 源 PcMonitor。
+正在从系统中移除服务 PcMonitor...
+已成功地从系统中移除服务 PcMonitor。
+尝试停止服务 PcMonitor。
+正在安装程序集“D:\Poject\test\ferockwinformporject\service\PcMonitor\PcMonitor\bin\Debug\PcMonitor.exe”。
+受影响的参数是:
+   logtoconsole = 
+   logfile = D:\Poject\test\ferockwinformporject\service\PcMonitor\PcMonitor\bin\Debug\PcMonitor.InstallLog
+   assemblypath = D:\Poject\test\ferockwinformporject\service\PcMonitor\PcMonitor\bin\Debug\PcMonitor.exe
+正在安装服务 PcMonitor...
+已成功安装服务 PcMonitor。
+正在日志 Application 中创建 EventLog 源 PcMonitor...
+正在提交程序集“D:\Poject\test\ferockwinformporject\service\PcMonitor\PcMonitor\bin\Debug\PcMonitor.exe”。
+受影响的参数是:
+   logtoconsole = 
+   logfile = D:\Poject\test\ferockwinformporject\service\PcMonitor\PcMonitor\bin\Debug\PcMonitor.InstallLog
+   assemblypath = D:\Poject\test\ferockwinformporject\service\PcMonitor\PcMonitor\bin\Debug\PcMonitor.exe
+正在安装程序集“D:\Poject\test\ferockwinformporject\service\PcMonitor\PcMonitor\bin\Debug\PcMonitor.exe”。
+受影响的参数是:
+   logtoconsole = 
+   logfile = D:\Poject\test\ferockwinformporject\service\PcMonitor\PcMonitor\bin\Debug\PcMonitor.InstallLog
+   assemblypath = D:\Poject\test\ferockwinformporject\service\PcMonitor\PcMonitor\bin\Debug\PcMonitor.exe
+正在安装服务 PcMonitor...
+正在日志 Application 中创建 EventLog 源 PcMonitor...
+正在回滚程序集“D:\Poject\test\ferockwinformporject\service\PcMonitor\PcMonitor\bin\Debug\PcMonitor.exe”。
+受影响的参数是:
+   logtoconsole = 
+   logfile = D:\Poject\test\ferockwinformporject\service\PcMonitor\PcMonitor\bin\Debug\PcMonitor.InstallLog
+   assemblypath = D:\Poject\test\ferockwinformporject\service\PcMonitor\PcMonitor\bin\Debug\PcMonitor.exe
+正在将事件日志还原到源 PcMonitor 的前一状态。
+正在安装程序集“D:\Poject\test\ferockwinformporject\service\PcMonitor\PcMonitor\bin\Debug\PcMonitor.exe”。
+受影响的参数是:
+   logtoconsole = 
+   logfile = D:\Poject\test\ferockwinformporject\service\PcMonitor\PcMonitor\bin\Debug\PcMonitor.InstallLog
+   assemblypath = D:\Poject\test\ferockwinformporject\service\PcMonitor\PcMonitor\bin\Debug\PcMonitor.exe
+正在安装服务 PcMonitor...
+正在日志 Application 中创建 EventLog 源 PcMonitor...
+正在回滚程序集“D:\Poject\test\ferockwinformporject\service\PcMonitor\PcMonitor\bin\Debug\PcMonitor.exe”。
+受影响的参数是:
+   logtoconsole = 
+   logfile = D:\Poject\test\ferockwinformporject\service\PcMonitor\PcMonitor\bin\Debug\PcMonitor.InstallLog
+   assemblypath = D:\Poject\test\ferockwinformporject\service\PcMonitor\PcMonitor\bin\Debug\PcMonitor.exe
+正在将事件日志还原到源 PcMonitor 的前一状态。
+正在安装程序集“D:\Poject\test\ferockwinformporject\service\PcMonitor\PcMonitor\bin\Debug\PcMonitor.exe”。
+受影响的参数是:
+   logtoconsole = 
+   logfile = D:\Poject\test\ferockwinformporject\service\PcMonitor\PcMonitor\bin\Debug\PcMonitor.InstallLog
+   assemblypath = D:\Poject\test\ferockwinformporject\service\PcMonitor\PcMonitor\bin\Debug\PcMonitor.exe
+正在安装服务 PcMonitor...
+正在日志 Application 中创建 EventLog 源 PcMonitor...
+正在回滚程序集“D:\Poject\test\ferockwinformporject\service\PcMonitor\PcMonitor\bin\Debug\PcMonitor.exe”。
+受影响的参数是:
+   logtoconsole = 
+   logfile = D:\Poject\test\ferockwinformporject\service\PcMonitor\PcMonitor\bin\Debug\PcMonitor.InstallLog
+   assemblypath = D:\Poject\test\ferockwinformporject\service\PcMonitor\PcMonitor\bin\Debug\PcMonitor.exe
+正在将事件日志还原到源 PcMonitor 的前一状态。

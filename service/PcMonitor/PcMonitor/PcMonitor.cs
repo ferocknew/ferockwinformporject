@@ -7,6 +7,7 @@ using System.Linq;
 using System.ServiceProcess;
 using System.Text;
 using System.Data.OleDb;
+using System.Collections;
 
 namespace PcMonitor
 {
@@ -22,6 +23,7 @@ namespace PcMonitor
             // TODO: 在此处添加代码以启动服务。
             //托管代码的实体类
             MyTimer();
+            Hashtable _HTNetworkMonitor = new Hashtable();
         }
 
         protected override void OnStop()
@@ -30,12 +32,12 @@ namespace PcMonitor
         }
         //托管定时器
         private void MyTimer() {
-            int _Sleep = 60000;//60秒记录一次
+            int _Sleep = 30000;//60秒记录一次
             System.Timers.Timer _MT = new System.Timers.Timer(_Sleep);
             _MT.Elapsed += new System.Timers.ElapsedEventHandler(MTimedEvent);
             //MT.AutoReset   =false;
             //MT.Start();
-            _MT.Enabled = true;        
+            _MT.Enabled = true;
         }
         //构造System.Timers.Timer实例   间隔时间事件
         private void MTimedEvent(object source, System.Timers.ElapsedEventArgs e) {
@@ -44,9 +46,26 @@ namespace PcMonitor
             OleDbConnection conn = new OleDbConnection(strConnection);
             conn.Open();
 
-            //String _sql = "insert into [Test] ([Title]) VALUES ('" + DateTime.Now.ToString() + "')";
-            //OleDbCommand cmd = new OleDbCommand(_sql, conn);
-            //cmd.ExecuteNonQuery();
+            Dictionary<string, string> _Dic = new Dictionary<string, string>();
+
+            //实例化网络监视类
+            Common.Network.NetworkMonitor monitor = new Common.Network.NetworkMonitor();
+            for (int i = 0; i < monitor.Adapters.Length;i++ ) {
+                _Dic.Add(monitor.Adapters[i].Name, monitor.Adapters[i].Name);
+            }
+
+
+
+            foreach (KeyValuePair<string, string> item in _Dic)
+            {
+                OleDbCommand _cmd = new OleDbCommand("Select count(ID) From [Network] Where NetworkDevice='" + item.Value + "'", conn);
+                int _count = Convert.ToInt32(_cmd.ExecuteScalar());
+                if(_count==0){
+                    String _sql = "insert into [Network] ([NetworkDevice]) VALUES ('" + item.Value + "')";
+                    OleDbCommand cmd = new OleDbCommand(_sql, conn);
+                    cmd.ExecuteNonQuery();
+                }
+            }
 
             conn.Dispose();
             GC.Collect();
