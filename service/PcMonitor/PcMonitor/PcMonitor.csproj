@@ -48,6 +48,8 @@
   <ItemGroup>
     <Compile Include="Common\Network\NetworkAdapter.cs" />
     <Compile Include="Common\Network\NetworkMonitor.cs" />
+    <Compile Include="Common\Service\Http.cs" />
+    <Compile Include="Common\Service\MyWebServer.cs" />
     <Compile Include="Common\system\Info.cs" />
     <Compile Include="PcMonitor.cs">
       <SubType>Component</SubType>
@@ -74,6 +76,7 @@
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
