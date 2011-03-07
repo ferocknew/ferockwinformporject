@@ -1,0 +1,11 @@
+<button>123</button>
+<script src="jquery.min.js">
+</script><script>$("button").click(function(){
+	$.ajax({
+		url:'http://127.0.0.1:11800/',
+		dataType:"jsonp",
+		success:function(json){
+			console.info(json);
+		}
+	});
+})</script>

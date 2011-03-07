@@ -8,6 +8,8 @@ using System.ServiceProcess;
 using System.Text;
 using System.Data.OleDb;
 using System.Collections;
+using System.Net;
+using System.IO;
 
 namespace PcMonitor
 {
@@ -17,13 +19,21 @@ namespace PcMonitor
         {
             InitializeComponent();
         }
-
+        public void Start()
+        {
+            OnStart(null);
+        }
         protected override void OnStart(string[] args)
         {
             // TODO: 在此处添加代码以启动服务。
             //托管代码的实体类
-            MyTimer();
-            Hashtable _HTNetworkMonitor = new Hashtable();
+            //MyTimer();
+            Common.Service.Http _http = new Common.Service.Http(11800);
+            _http.Start();
+            Common.Service.MyWebServer _myWS = new Common.Service.MyWebServer();
+            //_myWS.StartListen();
+
+            
         }
 
         protected override void OnStop()
